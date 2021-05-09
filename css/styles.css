@@ -456,7 +456,7 @@ h1{
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 6rem;
 }
 
 .red{
@@ -468,6 +468,7 @@ h1{
     justify-content: center;
     align-items: center;
     color: white;
+    
 }
 
 .red:hover{
@@ -527,13 +528,13 @@ h1{
 }
 
 .campo_form input, .campo_form textarea{
-    width: 100%;
+    width: 75%;
     margin-bottom: .7rem;
     background:white;
-    padding: 1.5rem;
-    border-radius: .7rem;
+    padding: .6rem;
+    border-radius: .9rem;
     margin-bottom: 1.3rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     border: 1px solid var(--colorPrincipal);
 }
 
@@ -581,11 +582,11 @@ textarea{
 @media (min-width: 768px){
     .imagenabaut img{
         margin-top: 3rem;
-        width: 25%;
+        width: 20%;
     }
 
     .info_sobre_mi{
-        width: 95%;
+        width: 75%;
         margin: auto;
         line-height: 1.5;
     }
