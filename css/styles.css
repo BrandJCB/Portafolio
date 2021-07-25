@@ -323,6 +323,7 @@ h1{
 }
 
 /*PROYECTOS*/
+
 .titulos_proyectos{
     text-align: center;
     padding-top: 5rem;
@@ -331,15 +332,14 @@ h1{
 .proyectos_r{
     /* background-color: gray; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 99.9%;
     gap: 2rem;
 }
-
 
 .proyecto_item {
     position: relative;
     height: 250px;
-    /* width: 370px; */
+    width: auto;
     overflow: hidden;
     border-radius: 9px;
 }
@@ -354,6 +354,11 @@ h1{
     transform: scale(1.2);
 }
 
+.proyecto_item:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
 .proyecto_item .capa{
     position: absolute;
     top: 0;
@@ -366,9 +371,12 @@ h1{
     text-align: center;
 }
 
-.proyecto_item:hover > .capa{
-    opacity: 1;
-    visibility: visible;
+.proyecto_item {
+    position: relative;
+    height: 250px;
+    width: auto;
+    overflow: hidden;
+    border-radius: 9px;
 }
 
 .proyecto_item:hover > .capa h3{
@@ -382,12 +390,35 @@ h1{
 
 .proyecto_item .capa p{
     color: white;
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 1.5;
     max-width: 330px;
     margin: auto;
     margin-bottom: 2.5rem;
-} 
+}
+
+@media (min-width: 720px){
+    .proyectos_r{
+        /* background-color: gray; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 980px) {
+    .proyectos_r{
+        /* background-color: gray; */
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .proyecto_item .capa p{
+        font-size: 2rem;
+    } 
+}
+
+
+
+
+
 
 /*COLABORACION*/
 .colaboracion{
