@@ -415,6 +415,26 @@ h1{
     } 
 }
 
+.proyectos_btn{
+    display: block;
+    margin-top: 3rem;
+    text-align: center;
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: #8E8C8C;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .proyectos_btn{
+        text-align: right;
+    }
+
+}
+
+.proyectos_btn:hover{
+    color: #053b5a;
+}
 
 
 
@@ -702,3 +722,88 @@ textarea{
     margin: 4rem;
     text-align: center;
 }
+
+/*Proyectos*/
+
+.linea{
+    background-color: var(--colorPrincipal);
+    width: 30rem;
+    height: .5rem;
+    margin-top: -3rem;
+}
+
+.proyectos-grid{
+    margin-top: 5rem;
+}
+
+.imagen_proyecto img{
+    width: 100%;
+}
+
+.info_proyecto h2{
+    font-size: 4rem;
+}
+.info_proyecto p{
+    margin-top: 3rem;
+    font-weight: 700;
+}
+
+
+
+@media (min-width: 768px){
+
+
+
+
+    .item-proyecto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+
+    .info_proyecto{
+        margin-top: -4.2rem;
+    }
+}
+
+.item-proyecto{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.284);
+    margin-bottom: 6rem;
+    padding-bottom: 4rem;
+}
+
+.item-proyecto:last-child{
+    border: none;
+}
+
+.btn_proyecto {
+    display: block;
+    color: var(--colorPrincipal);
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    border: 3px solid var(--colorPrincipal);
+    border-radius: .3rem;
+    transition: all .2s ease;
+    
+}
+
+@media (min-width: 768px){
+    .btn_proyecto{
+        width: 33rem;
+    }
+}
+
+.btn_proyecto:hover{
+    cursor: pointer;
+    background-color: var(--colorPrincipal);
+    color: var(--colorBlancoFondos);
+}
+
+.info_proyecto p span{
+    color: var(--colorTerciario);
+}
+
+
+
